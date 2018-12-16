@@ -1,6 +1,7 @@
 <div>{{title}}</div>
 <div class="flex-row">
-  <div *ngFor="let col of data">
+  <div *ngFor="let col of data" class="medium-padding">
+    <div>{{col.dateRange}}</div>
     <app-expense-goal [data]="col.expenses"></app-expense-goal>
   </div>
 </div>
